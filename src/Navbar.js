@@ -1,10 +1,11 @@
 import React from 'react'
 import { useSelector } from "react-redux";
-//import { initializeUseSelector } from 'react-redux/es/hooks/useSelector';
 
 const Navbar = () => {
 
 const amount =  useSelector(state=>state.amount)
+
+
     return (
         <div>
 

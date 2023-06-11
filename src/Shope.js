@@ -8,6 +8,8 @@ const Shope = () => {
 
     const dispatch = useDispatch();
 
+    const {withdrawMoney, depositMoney} = bindActionCreators(actionCreators,dispatch )
+
     return (
 
 
@@ -18,9 +20,12 @@ const Shope = () => {
                 <div class="card-body">
                     <h5 class="card-title">Double Money Card</h5>
                     <p class="card-text">25 Din Me Paisa Double </p>
-                    <button className="btn btn-primary mx-4" onClick={()=>{dispatch(actionCreators.withdrawMoney(100))}}> Remove</button>
+
+                    <div className="text-center">
+                    <button className="btn btn-primary mx-4" onClick={()=>{withdrawMoney(100)}}> Withdraw</button>
                       Funds
-                    <button className="btn btn-primary  mx-4" onClick={()=>{dispatch(actionCreators.depositMoney(100))}}> Add </button>
+                    <button className="btn btn-primary  mx-4" onClick={()=>{depositMoney(100)}}> Deposit </button>
+                    </div>
                 </div>
             </div>
         </div>
