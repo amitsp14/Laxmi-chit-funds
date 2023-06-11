@@ -24,11 +24,11 @@ const amount =  useSelector(state=>state.amount)
                                 <a className="nav-link" href="/">About</a>
                             </li>
 
-
-
                         </ul>
                         <div>
-                            <button className="btn btn-primary"> Balance : {amount}</button>
+                            {/* <button className="btn btn-primary"> Balance : {amount}</button> */}
+                            <h3><span class="badge text-bg-warning"> Balance : {amount}</span></h3>
+
 
                         </div>
                     </div>
